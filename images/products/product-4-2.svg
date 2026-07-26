@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <rect width="400" height="260" fill="#F2ECDF"/>
+  <g transform="translate(20,60)">
+    <path d="M10,140 C10,120 30,90 70,80 L120,60 C150,48 180,40 210,42 C240,44 255,60 280,66 C310,74 340,80 355,100 C365,113 362,140 340,148 L30,148 C16,148 10,150 10,140 Z" fill="#2A2E35" opacity="0.18"/>
+    <path d="M20,140 C22,110 55,86 95,74 L140,56 C168,44 196,36 222,40 C248,44 258,60 284,68 C308,76 330,82 344,98 C352,108 350,128 336,134 L34,134 C24,134 20,138 20,140 Z" fill="#F7F5F0"/>
+    <path d="M20,140 L336,134 C348,134 356,140 356,150 C356,160 348,166 336,166 L34,166 C22,166 12,160 12,150 C12,144 15,142 20,140 Z" fill="#2A2E35"/>
+    <path d="M95,74 L140,56 C168,44 196,36 222,40 C248,44 258,60 284,68" fill="none" stroke="#C1502E" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="150" cy="70" r="4" fill="#2A2E35"/>
+    <circle cx="175" cy="62" r="4" fill="#2A2E35"/>
+    <circle cx="200" cy="57" r="4" fill="#2A2E35"/>
+    <circle cx="225" cy="55" r="4" fill="#2A2E35"/>
+    <path d="M60,110 C90,100 120,96 150,98" stroke="#2A2E35" stroke-width="3" fill="none" opacity="0.5"/>
+    <path d="M60,120 C95,110 130,106 165,108" stroke="#2A2E35" stroke-width="3" fill="none" opacity="0.4"/>
+  </g>
+  <text x="200" y="245" font-family="Arial" font-size="13" fill="#2A2E35" text-anchor="middle" opacity="0.55">MAA Footwear</text>
+</svg>
