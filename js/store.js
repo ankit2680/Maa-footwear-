@@ -134,7 +134,7 @@
      Default credentials: admin / maa@2026
      In production this MUST be replaced by php/api/auth.php
      with hashed passwords + server-side sessions. See README. */
-  const DEFAULT_ADMIN = { username: "Ram", password: "Ramlakhan" };
+  const DEFAULT_ADMIN = { username: "Ram", password: "Ramlakhan@" };
 
   function login(username, password) {
     if (username === DEFAULT_ADMIN.username && password === DEFAULT_ADMIN.password) {
