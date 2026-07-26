@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login | MAA Footwear Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../images/site/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+<body>
+
+<div class="login-shell">
+  <div class="login-card">
+    <a href="../index.html" class="brand"><span class="brand__mark">M</span><span class="brand__name" style="color:var(--ink);">MAA <span>Footwear</span></span></a>
+    <h1>Admin Login</h1>
+    <p class="sub" style="text-align:center;color:var(--muted);">Sign in to manage products, offers &amp; enquiries.</p>
+    <form id="loginForm">
+      <div class="field"><label for="username">Username</label><input id="username" name="username" required autocomplete="username"></div>
+      <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" required autocomplete="current-password"></div>
+      <p id="loginError" style="display:none;color:var(--danger);font-size:.85rem;margin:-6px 0 14px;">Incorrect username or password.</p>
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+    <div class="login-hint">
+      <b>Demo credentials</b><br>Username: <code>admin</code> &nbsp; Password: <code>maa@2026</code><br>
+      Change these in <code>js/store.js</code> before going live, and replace with the real PHP session login in <code>php/api/auth.php</code>.
+    </div>
+  </div>
+</div>
+
+<script src="../js/products-seed.js"></script>
+<script src="../js/store.js"></script>
+<script src="../js/main.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
