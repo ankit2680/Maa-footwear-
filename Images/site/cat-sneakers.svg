@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <rect width="500" height="400" fill="#E8A33D"/>
+  <g opacity="0.9" transform="translate(90,140)">
+    <path d="M15,110 C15,95 40,70 85,58 L150,40 C190,28 230,20 265,25 C300,30 320,55 355,65 C390,76 420,85 440,105 C452,118 448,142 420,150 L35,150 C18,150 15,120 15,110 Z" fill="#F7F5F0" opacity="0.92"/>
+  </g>
+  <text x="250" y="380" font-family="Arial, sans-serif" font-size="20" fill="#F7F5F0" text-anchor="middle" font-weight="700" opacity="0.85">SNEAKERS</text>
+</svg>
