@@ -1,0 +1,86 @@
+/* MAA Footwear — Admin Panel styles (extends css/style.css) */
+
+.admin-shell{ display:grid; grid-template-columns: 250px 1fr; min-height:100vh; }
+
+.admin-sidebar{
+  background: var(--ink); color:#D8D4C8; padding:22px 16px; position:sticky; top:0; height:100vh; overflow-y:auto;
+}
+.admin-sidebar .brand{ margin-bottom: 28px; padding: 0 8px; }
+.admin-sidebar .brand__name{ color:#fff; }
+.admin-nav a{
+  display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:8px; font-weight:600; font-size:.92rem;
+  color:#C7C3B6; margin-bottom:4px;
+}
+.admin-nav a:hover{ background:#1F232A; color:#fff; }
+.admin-nav a.active{ background: var(--amber); color: var(--ink); }
+.admin-nav .divider-label{ font-size:.7rem; text-transform:uppercase; letter-spacing:1px; color:#7D7A6E; margin:18px 0 8px; padding: 0 14px; }
+
+.admin-main{ background: var(--bg); min-height:100vh; }
+.admin-topbar{
+  display:flex; align-items:center; justify-content:space-between; padding:16px 28px;
+  border-bottom:1px solid var(--border); background: var(--surface); position:sticky; top:0; z-index:50;
+}
+.admin-topbar h1{ font-size:1.4rem; margin:0; }
+.admin-content{ padding:28px; }
+.admin-user{ display:flex; align-items:center; gap:12px; }
+.admin-user__avatar{ width:36px; height:36px; border-radius:50%; background: var(--amber); display:flex; align-items:center; justify-content:center; font-weight:800; color:var(--ink); }
+
+.stat-cards{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-bottom:28px; }
+.stat-card{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); padding:20px; }
+.stat-card .label{ font-size:.78rem; text-transform:uppercase; letter-spacing:1px; color: var(--muted); font-weight:700; }
+.stat-card .value{ font-family: var(--font-display); font-size:2.2rem; margin-top:6px; }
+.stat-card .trend{ font-size:.78rem; margin-top:4px; }
+.stat-card .trend.up{ color: var(--success); }
+.stat-card .trend.warn{ color: var(--danger); }
+
+.admin-card{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); padding:22px; margin-bottom:22px; }
+.admin-card__head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px; }
+
+.admin-table{ width:100%; border-collapse:collapse; font-size:.9rem; }
+.admin-table th{ text-align:left; padding:10px 12px; background: var(--bg-alt); font-size:.72rem; text-transform:uppercase; letter-spacing:.5px; color: var(--muted); }
+.admin-table td{ padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:middle; }
+.admin-table img{ width:44px; height:44px; object-fit:cover; border-radius:6px; }
+.admin-table tr:hover td{ background: var(--bg-alt); }
+.table-actions{ display:flex; gap:6px; }
+.status-pill{ padding:3px 10px; border-radius:20px; font-size:.72rem; font-weight:700; }
+.status-pill.in{ background:#E4EEE1; color: var(--success); }
+.status-pill.low{ background:#FBEBD3; color: var(--amber-dark); }
+.status-pill.out{ background:#F6DCD2; color: var(--danger); }
+.status-pill.new{ background:#E4EEE1; color: var(--success); }
+.status-pill.read{ background: var(--bg-alt); color: var(--muted); }
+
+.login-shell{ min-height:100vh; display:flex; align-items:center; justify-content:center; background: var(--ink); padding:20px; }
+.login-card{ background: var(--surface); border-radius: var(--radius-lg); padding:40px; width:100%; max-width:400px; box-shadow: var(--shadow-lg); }
+.login-card .brand{ justify-content:center; margin-bottom:22px; }
+.login-card h1{ font-size:1.6rem; text-align:center; }
+.login-card p.sub{ text-align:center; margin-bottom:24px; }
+.login-hint{ background: var(--bg-alt); border-radius:8px; padding:12px 14px; font-size:.82rem; margin-top:18px; }
+
+.image-upload-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.image-slot{
+  aspect-ratio:1/1; border:2px dashed var(--border); border-radius:8px; display:flex; align-items:center; justify-content:center;
+  font-size:.75rem; color: var(--muted); text-align:center; padding:8px; position:relative; overflow:hidden; background: var(--bg-alt);
+}
+.image-slot img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.image-slot input{ position:absolute; inset:0; opacity:0; cursor:pointer; }
+
+.toggle-row{ display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--border); }
+.switch{ position:relative; width:44px; height:24px; }
+.switch input{ opacity:0; width:0; height:0; }
+.switch .slider{ position:absolute; inset:0; background: var(--border); border-radius:24px; transition:.2s; }
+.switch .slider::before{ content:""; position:absolute; width:18px; height:18px; left:3px; top:3px; background:#fff; border-radius:50%; transition:.2s; }
+.switch input:checked + .slider{ background: var(--moss); }
+.switch input:checked + .slider::before{ transform: translateX(20px); }
+
+.toast{
+  position:fixed; bottom:24px; right:24px; background: var(--ink); color:#fff; padding:14px 20px; border-radius:8px;
+  box-shadow: var(--shadow-lg); z-index:1000; font-weight:600; display:flex; align-items:center; gap:10px;
+  animation: toastIn .25s ease;
+}
+@keyframes toastIn{ from{ transform: translateY(20px); opacity:0;} to{ transform:none; opacity:1;} }
+
+@media (max-width: 900px){
+  .admin-shell{ grid-template-columns:1fr; }
+  .admin-sidebar{ position:static; height:auto; }
+  .stat-cards{ grid-template-columns:repeat(2,1fr); }
+}
