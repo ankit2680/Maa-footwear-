@@ -20,10 +20,10 @@
   const DEFAULT_SETTINGS = {
     storeName: "MAA Footwear",
     tagline: "Step Out In Style",
-    phone: "+91 98765 43210",
-    whatsapp: "919876543210",
+    phone: "+91 6387041182",
+    whatsapp: "916387041182",
     email: "hello@maafootwear.in",
-    address: "Shop No. 14, Station Road Market, Kannauj, Uttar Pradesh 209725",
+    address: "Near Krishna Talkies Gandhi Nagar Tirwaganj, Kannauj, Uttar Pradesh 209725",
     hours: "Mon – Sun: 10:00 AM – 9:00 PM",
     mapEmbed: "https://www.google.com/maps?q=Kannauj,Uttar+Pradesh&output=embed",
     heroHeadline: "Footwear That Keeps Up With You",
@@ -134,7 +134,7 @@
      Default credentials: admin / maa@2026
      In production this MUST be replaced by php/api/auth.php
      with hashed passwords + server-side sessions. See README. */
-  const DEFAULT_ADMIN = { username: "admin", password: "maa@2026" };
+  const DEFAULT_ADMIN = { username: "Ram", password: "Ramlakhan" };
 
   function login(username, password) {
     if (username === DEFAULT_ADMIN.username && password === DEFAULT_ADMIN.password) {
